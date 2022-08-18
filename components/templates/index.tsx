@@ -1,7 +1,7 @@
 import tw from "tailwind-styled-components/dist/tailwind"
 
 export const TemplateContainer = tw.div`
-    bg-gray-100 w-screen h-screen flex justify-center
+    bg-gray-100 w-screen h-screen flex flex-col items-center
 `
 
 export const TemplateContents = tw.section`
