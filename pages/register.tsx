@@ -9,28 +9,30 @@ import {
     TemplateMainHeroSection,
 } from "../components/templates"
 
-const Login = () => {
+const Register = () => {
     return (
         <TemplateContainer>
             <TemplateContents>
                 <SidebarHero />
 
                 <TemplateMainHeroSection>
-                    <h1 className="font-bold text-3xl">Acesse sua conta</h1>
+                    <h1 className="font-bold text-3xl">Crie sua conta</h1>
 
                     <form className="flex flex-col w-full gap-5 max-w-xs">
-                        <InputText label="Email" type="email" name="email" id="iemail" />
+                        <InputText label="Email *" type="email" name="email" id="iemail" />
 
-                        <InputText label="Senha" type="password" name="password" id="ipassword" />
+                        <InputText label="Confirmar Email *" type="email" name="email" id="iemail" />
 
-                        <Button>Entrar</Button>
+                        <InputText label="Senha *" type="password" name="password" id="ipassword" />
+
+                        <Button>Criar Conta</Button>
                     </form>
 
-                    <Link href="/register" className="hover:text-[#6C63FF]">Criar conta</Link>
+                    <Link href="/login" className="hover:text-[#6C63FF]">Já possuo uma conta</Link>
                 </TemplateMainHeroSection>
             </TemplateContents>
         </TemplateContainer>
     )
 }
 
-export default Login
+export default Register
