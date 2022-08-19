@@ -1,6 +1,6 @@
-import { Button } from "../components/atoms/Button"
-import { TemplateContainer } from "../components/templates"
-import { Card } from "./components/Card"
+import { Button } from "../../components/atoms/Button"
+import { TemplateContainer } from "../../components/templates"
+import { Card } from "../components/Card"
 
 const Dashboard = () => {
 
@@ -32,7 +32,6 @@ const Dashboard = () => {
                         cost={item.cost}
                     />
                 ))}
-
             </main>
         </TemplateContainer>
     )
