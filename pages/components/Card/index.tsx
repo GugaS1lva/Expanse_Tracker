@@ -10,3 +10,5 @@ export const Card = ({ title, category, cost }) => {
         </article>
     )
 }
+
+export default Card
