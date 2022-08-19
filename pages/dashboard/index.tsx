@@ -24,7 +24,7 @@ const Dashboard = () => {
             </header>
 
             <main className="w-full bg-purple-400 max-w-screen-lg h-5/6 grid overflow-y-scroll content-start grid-cols-3 gap-4 p-4 mb-10">
-                {cards.map((item) => (
+                {cards?.map((item) => (
                     <Card
                         key={item.id}
                         title={item.title}
