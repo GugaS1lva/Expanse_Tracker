@@ -19,11 +19,11 @@ const Register = () => {
                     <h1 className="font-bold text-3xl">Crie sua conta</h1>
 
                     <form className="flex flex-col w-full gap-5 max-w-xs">
-                        <InputText label="Email *" type="email" name="email" id="iemail" />
+                        <InputText label="Email *" type="email" name="email" />
 
-                        <InputText label="Confirmar Email *" type="email" name="email" id="iemail" />
+                        <InputText label="Confirmar Email *" type="email" name="email" />
 
-                        <InputText label="Senha *" type="password" name="password" id="ipassword" />
+                        <InputText label="Senha *" type="password" name="password" />
 
                         <Button>Criar Conta</Button>
                     </form>

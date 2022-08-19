@@ -1,5 +1,5 @@
 import React from "react";
-import { DashboardAdd } from "../../../src/DashboardAdd";
+import DashboardAdd from "../../../src/Dashboard/DashboardAdd";
 
 const index = () => {
     return (
