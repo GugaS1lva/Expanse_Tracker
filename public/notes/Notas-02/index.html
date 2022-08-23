@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <style>
+        span{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgreen;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anotações do Projeto</h1>
+    <h2>React.js + Next.js + TypeScript + Styled-Components + Tailwind.css</h2>
+
+    <section>
+        <h3>Refatorando a estilização das tags com o Tailwind + Styled-Components</h3>
+
+        <p>Quando uma tag dentro da Aplicação fica muito extensa por causa do Tailwind, há uma forma de extrair esse estilo pra um lugar separado (onde conterá várias "extrações" dessas).</p>
+        <ul>
+            <li>Vemos aqui que há um "className" muito longo:
+                <br><img src="imagens/01.png" alt="">
+                <br>Preste atenção!
+            </li>
+            <br>
+            <br>
+            <li>Criamos uma pasta apenas para esses <strong>templates</strong>:
+                <br><img src="imagens/02.png" alt="">
+            </li>
+            <br>
+            <li>Observe que há um arquivo <code>index.tsx</code> dentro de <strong>templates</strong>. Nesse arquivo, inicialmente é feito a importação do <strong><code>tw</code></strong>:
+                <br><img src="imagens/03.png" alt="">
+            </li>
+            <br>
+            <li>Então, é exportado um novo componente com um nome semântico. Esse componete irá substituir a tag que contém o className longo então atenção pro nome que escolher pro componente.
+                <br><img src="imagens/04.png" alt="">
+            </li>
+            <br>
+            <li>Logo depois vem um <span>tw.tag``</span>
+                <br><img src="imagens/05.png" alt="">
+                <br>ATENÇÃO: a palavra 'div' será subtituida pela tag que está sendo estilizada com o longo className
+            </li>
+            <br>
+            <li>Dentro dos apóstrofos vai ficar todo o estilo que estava dentro do className:
+                <br><img src="imagens/06.png" alt="">
+            </li>
+            <br>
+            <li>Agora, no lugar da 'tag + longo-ClassName', é só chamar o componente criado dentro do Templates:
+                <br><img src="imagens/07.png" alt="">
+                <br>OBS: Não se esqueça de importar o novo componente: <img src="imagens/08.png" alt="">
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>

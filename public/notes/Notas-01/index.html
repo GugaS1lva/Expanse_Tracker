@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <style>
+        div {
+            background-color: lightblue;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Anotações do Projeto</h1>
+    <h2>React.js + Next.js + TypeScript + Styled-Components + Tailwind.css</h2>
+
+    <section>
+        <h3>Organizando os arquivos e páginas:</h3>
+
+        <div>
+            <ul>
+                <li>
+                    A pasta <code>pages</code> do Next, é uma pasta especial e deve estar o mais "limpa" possível.
+                    Então,
+                    o conteúdo de cada página da Aplicação deve ficar dentro de uma pasta responsável apenas por
+                    conteúdos (por convenção ela é chamada de <code>src</code>), deixando enquanto que a pasta
+                    <code>pages</code> vai ficar apenas com um "esqueleto" da nova página.
+                </li>
+                <br>
+                <li>
+                    Observe que cada nova página criada dentro de <code>src</code> tem uma pasta com o mesmo nome (mas
+                    com letras minúscolas por causa do Next) criada dentro de <code>pages</code>.
+                    <br>
+                    <img src="imagens/01.png" alt="">
+                    <br>
+                    Relembrando: O conteúdo das páginas estão todos dentro da pasta <code>src</code> enquanto que a
+                    pasta <code>pages</code> (do Next) garda apenas o "esqueleto" dessas páginas.
+                </li>
+                <br>
+                <li>
+                    É importante lembrar que, assim como o <code>index.html</code>, o arquivo principal de cada página
+                    deve ser criado na raíz de sua própria pasta.
+                    <br>
+                    Abaixo, vemos que tanto na pasta <code>pages</code> quanto na pasta <code>src</code>, cada página
+                    tem sua própria página e dentro da mesma tem um arquivo <code>index.tsx</code>.
+                    <br>
+                    <img src="imagens/02.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <h3>"Esqueleto" >>> <code>pages</code>:</h3>
+                <br>
+                <li>Essa é a estrutura/esqueleto de cada página dentro de <code>pages</code>:
+                    <br><img src="imagens/03.png" alt="">
+                    <br>OBS: Use a extensão ES7+ Snippets para criar essa estrutura rapidamente usando o comando
+                    <code>rafce</code> ou <code>rafc</code>.
+                </li>
+                <br>
+                <li>Esse esqueleto é preenchido com a <strong>importação do componente</strong> e a <strong>chamada do
+                        componente</strong> da página.
+                    <br><img src="imagens/04.png" alt="">
+                </li>
+
+                <h3>"Conteúdo" >>> <code>src</code></h3>
+                <br>
+                <li>Os códigos ficam dentro de um <strong>componente</strong> que é <strong>exportado por
+                        padrão</strong> logo no final da página:
+                    <br><img src="imagens/05.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Resumo:</h3>
+
+            <p>Dentro de pages tem o "esqueleto das páginas" e dentro da pasta src tem o "conteúdo" das páginas (em
+                forma de componente). Os componentes de src são exportados por padrão e são importados pelos
+                "esqueletos" que estão dentro de pages. Fim.</p>
+        </div>
+    </section>
+</body>
+
+</html>

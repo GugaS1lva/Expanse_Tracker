@@ -42,8 +42,29 @@ export default function Cards() {
   return (
     <FlexContainer>
       <Card>
+        <StyledLink href="/login" name="Login Page &rarr;" />
+      </Card>
+      <br />
+
+      <Card>
+        <StyledLink href="/register" name="Register Page &rarr;" />
+      </Card>
+      <br />
+
+      <Card>
+        <StyledLink href="/dashboard" name="Dashboard Page &rarr;" />
+      </Card>
+      <br />
+      
+      <Card>
+        <StyledLink href="/dashboard/add" name="Add Page &rarr;" />
+      </Card>
+      <br />
+
+      <Card>
         <StyledLink href="/about" name="About Page &rarr;" />
       </Card>
+      <br />
     </FlexContainer>
   )
 }
